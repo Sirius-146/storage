@@ -1,0 +1,1615 @@
+import { Reservation } from "../types/reservation";
+
+export async function fetchReservationsByDate(date: Date): Promise<Reservation[]> {
+  // ⚠️ Aqui você pode substituir por uma chamada real de API (fetch/axios).
+  // Por enquanto simulo alguns dados:
+
+  return [
+  {
+    "id": 1073741825,
+    "plannedCheckin": "2025-09-01",
+    "checkin": "2025-09-01T14:30:00.000Z",
+    "plannedCheckout": "2025-09-03",
+    "checkout": "2025-09-03T11:00:00.000Z",
+    "status": "COMPLETED",
+    "apartment": {
+      "id": 1073741825,
+      "number": 203,
+      "type": "Deluxe"
+    },
+    "client": {
+      "id": 2,
+      "name": "Maria Oliveira",
+      "cpf": "111.111.111-11",
+      "phone": "(11) 98765-4321",
+      "email": "maria@email.com",
+      "address": "Avenida Y"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741826,
+    "plannedCheckin": "2025-09-02",
+    "checkin": "2025-09-02T15:00:00.000Z",
+    "plannedCheckout": "2025-09-05",
+    "checkout": null,
+    "status": "CHECKED_IN",
+    "apartment": {
+      "id": 1073741826,
+      "number": 301,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 3,
+      "name": "Pedro Santos",
+      "cpf": "222.222.222-22",
+      "phone": "(22) 98765-4321",
+      "email": "pedro@email.com",
+      "address": "Rua Z"
+    },
+    "guests": 3
+  },
+  {
+    "id": 1073741827,
+    "plannedCheckin": "2025-09-03",
+    "checkin": null,
+    "plannedCheckout": "2025-09-06",
+    "checkout": null,
+    "status": "PENDING",
+    "apartment": {
+      "id": 1073741827,
+      "number": 105,
+      "type": "Suite"
+    },
+    "client": {
+      "id": 4,
+      "name": "Ana Souza",
+      "cpf": "333.333.333-33",
+      "phone": "(33) 98765-4321",
+      "email": "ana@email.com",
+      "address": "Rua K"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741828,
+    "plannedCheckin": "2025-09-04",
+    "checkin": "2025-09-04T16:00:00.000Z",
+    "plannedCheckout": "2025-09-07",
+    "checkout": "2025-09-07T11:30:00.000Z",
+    "status": "COMPLETED",
+    "apartment": {
+      "id": 1073741828,
+      "number": 402,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 5,
+      "name": "Carlos Costa",
+      "cpf": "444.444.444-44",
+      "phone": "(44) 98765-4321",
+      "email": "carlos@email.com",
+      "address": "Avenida L"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741829,
+    "plannedCheckin": "2025-09-05",
+    "checkin": "2025-09-05T13:00:00.000Z",
+    "plannedCheckout": "2025-09-09",
+    "checkout": null,
+    "status": "CHECKED_IN",
+    "apartment": {
+      "id": 1073741829,
+      "number": 201,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 6,
+      "name": "Fernando Lima",
+      "cpf": "555.555.555-55",
+      "phone": "(55) 98765-4321",
+      "email": "fernando@email.com",
+      "address": "Rua P"
+    },
+    "guests": 1
+  },
+  {
+    "id": 1073741830,
+    "plannedCheckin": "2025-09-06",
+    "checkin": null,
+    "plannedCheckout": "2025-09-08",
+    "checkout": null,
+    "status": "PENDING",
+    "apartment": {
+      "id": 1073741830,
+      "number": 305,
+      "type": "Deluxe"
+    },
+    "client": {
+      "id": 7,
+      "name": "Juliana Martins",
+      "cpf": "666.666.666-66",
+      "phone": "(66) 98765-4321",
+      "email": "juliana@email.com",
+      "address": "Avenida Q"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741831,
+    "plannedCheckin": "2025-09-07",
+    "checkin": "2025-09-07T12:00:00.000Z",
+    "plannedCheckout": "2025-09-10",
+    "checkout": "2025-09-10T11:00:00.000Z",
+    "status": "COMPLETED",
+    "apartment": {
+      "id": 1073741831,
+      "number": 101,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 8,
+      "name": "Ricardo Nogueira",
+      "cpf": "777.777.777-77",
+      "phone": "(77) 98765-4321",
+      "email": "ricardo@email.com",
+      "address": "Rua R"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741832,
+    "plannedCheckin": "2025-09-08",
+    "checkin": null,
+    "plannedCheckout": "2025-09-12",
+    "checkout": null,
+    "status": "CANCELED",
+    "apartment": {
+      "id": 1073741832,
+      "number": 405,
+      "type": "Suite"
+    },
+    "client": {
+      "id": 9,
+      "name": "Camila Pereira",
+      "cpf": "888.888.888-88",
+      "phone": "(88) 98765-4321",
+      "email": "camila@email.com",
+      "address": "Avenida S"
+    },
+    "guests": 1
+  },
+  {
+    "id": 1073741833,
+    "plannedCheckin": "2025-09-09",
+    "checkin": "2025-09-09T14:00:00.000Z",
+    "plannedCheckout": "2025-09-11",
+    "checkout": null,
+    "status": "CHECKED_IN",
+    "apartment": {
+      "id": 1073741833,
+      "number": 202,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 10,
+      "name": "Eduardo Farias",
+      "cpf": "999.999.999-99",
+      "phone": "(99) 98765-4321",
+      "email": "eduardo@email.com",
+      "address": "Rua T"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741834,
+    "plannedCheckin": "2025-09-10",
+    "checkin": null,
+    "plannedCheckout": "2025-09-14",
+    "checkout": null,
+    "status": "PENDING",
+    "apartment": {
+      "id": 1073741834,
+      "number": 304,
+      "type": "Deluxe"
+    },
+    "client": {
+      "id": 11,
+      "name": "Patricia Guedes",
+      "cpf": "010.101.010-10",
+      "phone": "(10) 98765-4321",
+      "email": "patricia@email.com",
+      "address": "Avenida U"
+    },
+    "guests": 3
+  },
+  {
+    "id": 1073741835,
+    "plannedCheckin": "2025-09-11",
+    "checkin": "2025-09-11T15:30:00.000Z",
+    "plannedCheckout": "2025-09-15",
+    "checkout": "2025-09-15T10:00:00.000Z",
+    "status": "COMPLETED",
+    "apartment": {
+      "id": 1073741835,
+      "number": 103,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 12,
+      "name": "Guilherme Mota",
+      "cpf": "020.202.020-20",
+      "phone": "(20) 98765-4321",
+      "email": "guilherme@email.com",
+      "address": "Rua V"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741836,
+    "plannedCheckin": "2025-09-12",
+    "checkin": "2025-09-12T13:00:00.000Z",
+    "plannedCheckout": "2025-09-13",
+    "checkout": null,
+    "status": "CHECKED_IN",
+    "apartment": {
+      "id": 1073741836,
+      "number": 204,
+      "type": "Suite"
+    },
+    "client": {
+      "id": 13,
+      "name": "Beatriz Rocha",
+      "cpf": "030.303.030-30",
+      "phone": "(30) 98765-4321",
+      "email": "beatriz@email.com",
+      "address": "Avenida W"
+    },
+    "guests": 1
+  },
+  {
+    "id": 1073741837,
+    "plannedCheckin": "2025-09-13",
+    "checkin": null,
+    "plannedCheckout": "2025-09-16",
+    "checkout": null,
+    "status": "PENDING",
+    "apartment": {
+      "id": 1073741837,
+      "number": 302,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 14,
+      "name": "Lucas Neves",
+      "cpf": "040.404.040-40",
+      "phone": "(40) 98765-4321",
+      "email": "lucas@email.com",
+      "address": "Rua X"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741838,
+    "plannedCheckin": "2025-09-14",
+    "checkin": "2025-09-14T14:30:00.000Z",
+    "plannedCheckout": "2025-09-17",
+    "checkout": "2025-09-17T11:00:00.000Z",
+    "status": "COMPLETED",
+    "apartment": {
+      "id": 1073741838,
+      "number": 401,
+      "type": "Deluxe"
+    },
+    "client": {
+      "id": 15,
+      "name": "Sophia Castro",
+      "cpf": "050.505.050-50",
+      "phone": "(50) 98765-4321",
+      "email": "sophia@email.com",
+      "address": "Avenida Y"
+    },
+    "guests": 3
+  },
+  {
+    "id": 1073741839,
+    "plannedCheckin": "2025-09-15",
+    "checkin": "2025-09-15T15:00:00.000Z",
+    "plannedCheckout": "2025-09-18",
+    "checkout": null,
+    "status": "CHECKED_IN",
+    "apartment": {
+      "id": 1073741839,
+      "number": 104,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 16,
+      "name": "Rafael Teixeira",
+      "cpf": "060.606.060-60",
+      "phone": "(60) 98765-4321",
+      "email": "rafael@email.com",
+      "address": "Rua Z"
+    },
+    "guests": 1
+  },
+  {
+    "id": 1073741840,
+    "plannedCheckin": "2025-09-16",
+    "checkin": null,
+    "plannedCheckout": "2025-09-19",
+    "checkout": null,
+    "status": "PENDING",
+    "apartment": {
+      "id": 1073741840,
+      "number": 205,
+      "type": "Suite"
+    },
+    "client": {
+      "id": 17,
+      "name": "Isabela Costa",
+      "cpf": "070.707.070-70",
+      "phone": "(70) 98765-4321",
+      "email": "isabela@email.com",
+      "address": "Avenida A"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741841,
+    "plannedCheckin": "2025-09-17",
+    "checkin": "2025-09-17T16:00:00.000Z",
+    "plannedCheckout": "2025-09-20",
+    "checkout": "2025-09-20T12:00:00.000Z",
+    "status": "COMPLETED",
+    "apartment": {
+      "id": 1073741841,
+      "number": 303,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 18,
+      "name": "Gustavo Almeida",
+      "cpf": "080.808.080-80",
+      "phone": "(80) 98765-4321",
+      "email": "gustavo@email.com",
+      "address": "Rua B"
+    },
+    "guests": 1
+  },
+  {
+    "id": 1073741842,
+    "plannedCheckin": "2025-09-18",
+    "checkin": null,
+    "plannedCheckout": "2025-09-21",
+    "checkout": null,
+    "status": "CANCELED",
+    "apartment": {
+      "id": 1073741842,
+      "number": 403,
+      "type": "Deluxe"
+    },
+    "client": {
+      "id": 19,
+      "name": "Manuela Santos",
+      "cpf": "090.909.090-90",
+      "phone": "(90) 98765-4321",
+      "email": "manuela@email.com",
+      "address": "Avenida C"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741843,
+    "plannedCheckin": "2025-09-19",
+    "checkin": "2025-09-19T13:00:00.000Z",
+    "plannedCheckout": "2025-09-22",
+    "checkout": null,
+    "status": "CHECKED_IN",
+    "apartment": {
+      "id": 1073741843,
+      "number": 102,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 20,
+      "name": "Thiago Ribeiro",
+      "cpf": "101.101.101-01",
+      "phone": "(10) 98765-4321",
+      "email": "thiago@email.com",
+      "address": "Rua D"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741844,
+    "plannedCheckin": "2025-09-20",
+    "checkin": null,
+    "plannedCheckout": "2025-09-23",
+    "checkout": null,
+    "status": "PENDING",
+    "apartment": {
+      "id": 1073741844,
+      "number": 206,
+      "type": "Suite"
+    },
+    "client": {
+      "id": 21,
+      "name": "Mariana Souza",
+      "cpf": "111.111.111-11",
+      "phone": "(11) 98765-4321",
+      "email": "mariana@email.com",
+      "address": "Avenida E"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741845,
+    "plannedCheckin": "2025-09-01",
+    "checkin": "2025-09-01T15:00:00.000Z",
+    "plannedCheckout": "2025-09-02",
+    "checkout": "2025-09-02T11:00:00.000Z",
+    "status": "COMPLETED",
+    "apartment": {
+      "id": 1073741845,
+      "number": 306,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 22,
+      "name": "Felipe Mendes",
+      "cpf": "121.121.121-12",
+      "phone": "(12) 98765-4321",
+      "email": "felipe@email.com",
+      "address": "Rua F"
+    },
+    "guests": 1
+  },
+  {
+    "id": 1073741846,
+    "plannedCheckin": "2025-09-03",
+    "checkin": null,
+    "plannedCheckout": "2025-09-05",
+    "checkout": null,
+    "status": "PENDING",
+    "apartment": {
+      "id": 1073741846,
+      "number": 404,
+      "type": "Deluxe"
+    },
+    "client": {
+      "id": 23,
+      "name": "Carolina Ramos",
+      "cpf": "131.131.131-13",
+      "phone": "(13) 98765-4321",
+      "email": "carolina@email.com",
+      "address": "Avenida G"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741847,
+    "plannedCheckin": "2025-09-04",
+    "checkin": "2025-09-04T14:00:00.000Z",
+    "plannedCheckout": "2025-09-08",
+    "checkout": null,
+    "status": "CHECKED_IN",
+    "apartment": {
+      "id": 1073741847,
+      "number": 106,
+      "type": "Suite"
+    },
+    "client": {
+      "id": 24,
+      "name": "Bruno Gomes",
+      "cpf": "141.141.141-14",
+      "phone": "(14) 98765-4321",
+      "email": "bruno@email.com",
+      "address": "Rua H"
+    },
+    "guests": 1
+  },
+  {
+    "id": 1073741848,
+    "plannedCheckin": "2025-09-06",
+    "checkin": "2025-09-06T15:30:00.000Z",
+    "plannedCheckout": "2025-09-09",
+    "checkout": "2025-09-09T11:30:00.000Z",
+    "status": "COMPLETED",
+    "apartment": {
+      "id": 1073741848,
+      "number": 207,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 25,
+      "name": "Larissa Oliveira",
+      "cpf": "151.151.151-15",
+      "phone": "(15) 98765-4321",
+      "email": "larissa@email.com",
+      "address": "Avenida I"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741849,
+    "plannedCheckin": "2025-09-08",
+    "checkin": null,
+    "plannedCheckout": "2025-09-10",
+    "checkout": null,
+    "status": "CANCELED",
+    "apartment": {
+      "id": 1073741849,
+      "number": 307,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 26,
+      "name": "Daniela Lima",
+      "cpf": "161.161.161-16",
+      "phone": "(16) 98765-4321",
+      "email": "daniela@email.com",
+      "address": "Rua J"
+    },
+    "guests": 1
+  },
+  {
+    "id": 1073741850,
+    "plannedCheckin": "2025-09-10",
+    "checkin": "2025-09-10T14:00:00.000Z",
+    "plannedCheckout": "2025-09-12",
+    "checkout": null,
+    "status": "CHECKED_IN",
+    "apartment": {
+      "id": 1073741850,
+      "number": 406,
+      "type": "Deluxe"
+    },
+    "client": {
+      "id": 27,
+      "name": "André Pereira",
+      "cpf": "171.171.171-17",
+      "phone": "(17) 98765-4321",
+      "email": "andre@email.com",
+      "address": "Avenida K"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741851,
+    "plannedCheckin": "2025-09-11",
+    "checkin": null,
+    "plannedCheckout": "2025-09-15",
+    "checkout": null,
+    "status": "PENDING",
+    "apartment": {
+      "id": 1073741851,
+      "number": 107,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 28,
+      "name": "Tatiane Castro",
+      "cpf": "181.181.181-18",
+      "phone": "(18) 98765-4321",
+      "email": "tatiane@email.com",
+      "address": "Rua L"
+    },
+    "guests": 1
+  },
+  {
+    "id": 1073741852,
+    "plannedCheckin": "2025-09-13",
+    "checkin": "2025-09-13T16:00:00.000Z",
+    "plannedCheckout": "2025-09-16",
+    "checkout": "2025-09-16T12:00:00.000Z",
+    "status": "COMPLETED",
+    "apartment": {
+      "id": 1073741852,
+      "number": 208,
+      "type": "Suite"
+    },
+    "client": {
+      "id": 29,
+      "name": "Diego Costa",
+      "cpf": "191.191.191-19",
+      "phone": "(19) 98765-4321",
+      "email": "diego@email.com",
+      "address": "Avenida M"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741853,
+    "plannedCheckin": "2025-09-15",
+    "checkin": "2025-09-15T13:00:00.000Z",
+    "plannedCheckout": "2025-09-19",
+    "checkout": null,
+    "status": "CHECKED_IN",
+    "apartment": {
+      "id": 1073741853,
+      "number": 308,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 30,
+      "name": "Fernanda Alves",
+      "cpf": "202.202.202-20",
+      "phone": "(20) 98765-4321",
+      "email": "fernanda@email.com",
+      "address": "Rua N"
+    },
+    "guests": 1
+  },
+  {
+    "id": 1073741854,
+    "plannedCheckin": "2025-09-17",
+    "checkin": null,
+    "plannedCheckout": "2025-09-20",
+    "checkout": null,
+    "status": "PENDING",
+    "apartment": {
+      "id": 1073741854,
+      "number": 407,
+      "type": "Deluxe"
+    },
+    "client": {
+      "id": 31,
+      "name": "João Lima",
+      "cpf": "212.212.212-21",
+      "phone": "(21) 98765-4321",
+      "email": "joao.lima@email.com",
+      "address": "Avenida O"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741855,
+    "plannedCheckin": "2025-09-19",
+    "checkin": "2025-09-19T15:00:00.000Z",
+    "plannedCheckout": "2025-09-22",
+    "checkout": "2025-09-22T11:00:00.000Z",
+    "status": "COMPLETED",
+    "apartment": {
+      "id": 1073741855,
+      "number": 108,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 32,
+      "name": "Amanda Guedes",
+      "cpf": "222.222.222-22",
+      "phone": "(22) 98765-4321",
+      "email": "amanda@email.com",
+      "address": "Rua P"
+    },
+    "guests": 1
+  },
+  {
+    "id": 1073741856,
+    "plannedCheckin": "2025-09-20",
+    "checkin": null,
+    "plannedCheckout": "2025-09-24",
+    "checkout": null,
+    "status": "PENDING",
+    "apartment": {
+      "id": 1073741856,
+      "number": 209,
+      "type": "Suite"
+    },
+    "client": {
+      "id": 33,
+      "name": "Rodrigo Silva",
+      "cpf": "232.232.232-23",
+      "phone": "(23) 98765-4321",
+      "email": "rodrigo@email.com",
+      "address": "Avenida Q"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741857,
+    "plannedCheckin": "2025-09-02",
+    "checkin": "2025-09-02T13:30:00.000Z",
+    "plannedCheckout": "2025-09-05",
+    "checkout": "2025-09-05T12:00:00.000Z",
+    "status": "COMPLETED",
+    "apartment": {
+      "id": 1073741857,
+      "number": 309,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 34,
+      "name": "Alice Martins",
+      "cpf": "242.242.242-24",
+      "phone": "(24) 98765-4321",
+      "email": "alice@email.com",
+      "address": "Rua R"
+    },
+    "guests": 1
+  },
+  {
+    "id": 1073741858,
+    "plannedCheckin": "2025-09-05",
+    "checkin": null,
+    "plannedCheckout": "2025-09-07",
+    "checkout": null,
+    "status": "CANCELED",
+    "apartment": {
+      "id": 1073741858,
+      "number": 408,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 35,
+      "name": "Marcos Ribeiro",
+      "cpf": "252.252.252-25",
+      "phone": "(25) 98765-4321",
+      "email": "marcos@email.com",
+      "address": "Avenida S"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741859,
+    "plannedCheckin": "2025-09-07",
+    "checkin": "2025-09-07T14:30:00.000Z",
+    "plannedCheckout": "2025-09-11",
+    "checkout": null,
+    "status": "CHECKED_IN",
+    "apartment": {
+      "id": 1073741859,
+      "number": 109,
+      "type": "Deluxe"
+    },
+    "client": {
+      "id": 36,
+      "name": "Vitor Souza",
+      "cpf": "262.262.262-26",
+      "phone": "(26) 98765-4321",
+      "email": "vitor@email.com",
+      "address": "Rua T"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741860,
+    "plannedCheckin": "2025-09-09",
+    "checkin": null,
+    "plannedCheckout": "2025-09-12",
+    "checkout": null,
+    "status": "PENDING",
+    "apartment": {
+      "id": 1073741860,
+      "number": 210,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 37,
+      "name": "Laura Farias",
+      "cpf": "272.272.272-27",
+      "phone": "(27) 98765-4321",
+      "email": "laura@email.com",
+      "address": "Avenida U"
+    },
+    "guests": 1
+  },
+  {
+    "id": 1073741861,
+    "plannedCheckin": "2025-09-12",
+    "checkin": "2025-09-12T15:00:00.000Z",
+    "plannedCheckout": "2025-09-14",
+    "checkout": "2025-09-14T11:00:00.000Z",
+    "status": "COMPLETED",
+    "apartment": {
+      "id": 1073741861,
+      "number": 310,
+      "type": "Suite"
+    },
+    "client": {
+      "id": 38,
+      "name": "Thiago Costa",
+      "cpf": "282.282.282-28",
+      "phone": "(28) 98765-4321",
+      "email": "thiagocosta@email.com",
+      "address": "Rua V"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741862,
+    "plannedCheckin": "2025-09-14",
+    "checkin": "2025-09-14T16:00:00.000Z",
+    "plannedCheckout": "2025-09-17",
+    "checkout": null,
+    "status": "CHECKED_IN",
+    "apartment": {
+      "id": 1073741862,
+      "number": 409,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 39,
+      "name": "Juliana Rocha",
+      "cpf": "292.292.292-29",
+      "phone": "(29) 98765-4321",
+      "email": "juliana@email.com",
+      "address": "Avenida W"
+    },
+    "guests": 1
+  },
+  {
+    "id": 1073741863,
+    "plannedCheckin": "2025-09-16",
+    "checkin": null,
+    "plannedCheckout": "2025-09-18",
+    "checkout": null,
+    "status": "PENDING",
+    "apartment": {
+      "id": 1073741863,
+      "number": 110,
+      "type": "Deluxe"
+    },
+    "client": {
+      "id": 40,
+      "name": "Bruno Lima",
+      "cpf": "303.303.303-30",
+      "phone": "(30) 98765-4321",
+      "email": "bruno.lima@email.com",
+      "address": "Rua X"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741864,
+    "plannedCheckin": "2025-09-18",
+    "checkin": "2025-09-18T13:00:00.000Z",
+    "plannedCheckout": "2025-09-20",
+    "checkout": "2025-09-20T11:30:00.000Z",
+    "status": "COMPLETED",
+    "apartment": {
+      "id": 1073741864,
+      "number": 211,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 41,
+      "name": "Livia Santos",
+      "cpf": "313.313.313-31",
+      "phone": "(31) 98765-4321",
+      "email": "livia@email.com",
+      "address": "Avenida Y"
+    },
+    "guests": 1
+  },
+  {
+    "id": 1073741865,
+    "plannedCheckin": "2025-09-20",
+    "checkin": null,
+    "plannedCheckout": "2025-09-25",
+    "checkout": null,
+    "status": "PENDING",
+    "apartment": {
+      "id": 1073741865,
+      "number": 311,
+      "type": "Suite"
+    },
+    "client": {
+      "id": 42,
+      "name": "Henrique Gomes",
+      "cpf": "323.323.323-32",
+      "phone": "(32) 98765-4321",
+      "email": "henrique@email.com",
+      "address": "Rua Z"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741866,
+    "plannedCheckin": "2025-09-01",
+    "checkin": "2025-09-01T14:00:00.000Z",
+    "plannedCheckout": "2025-09-04",
+    "checkout": "2025-09-04T12:00:00.000Z",
+    "status": "COMPLETED",
+    "apartment": {
+      "id": 1073741866,
+      "number": 410,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 43,
+      "name": "Monica Mendes",
+      "cpf": "333.333.333-33",
+      "phone": "(33) 98765-4321",
+      "email": "monica@email.com",
+      "address": "Avenida A"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741867,
+    "plannedCheckin": "2025-09-03",
+    "checkin": null,
+    "plannedCheckout": "2025-09-06",
+    "checkout": null,
+    "status": "CANCELED",
+    "apartment": {
+      "id": 1073741867,
+      "number": 111,
+      "type": "Deluxe"
+    },
+    "client": {
+      "id": 44,
+      "name": "Gabriel Ramos",
+      "cpf": "343.343.343-34",
+      "phone": "(34) 98765-4321",
+      "email": "gabriel@email.com",
+      "address": "Rua B"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741868,
+    "plannedCheckin": "2025-09-05",
+    "checkin": "2025-09-05T15:30:00.000Z",
+    "plannedCheckout": "2025-09-08",
+    "checkout": null,
+    "status": "CHECKED_IN",
+    "apartment": {
+      "id": 1073741868,
+      "number": 212,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 45,
+      "name": "Fernanda Rodrigues",
+      "cpf": "353.353.353-35",
+      "phone": "(35) 98765-4321",
+      "email": "fernanda.rodrigues@email.com",
+      "address": "Avenida C"
+    },
+    "guests": 1
+  },
+  {
+    "id": 1073741869,
+    "plannedCheckin": "2025-09-07",
+    "checkin": null,
+    "plannedCheckout": "2025-09-10",
+    "checkout": null,
+    "status": "PENDING",
+    "apartment": {
+      "id": 1073741869,
+      "number": 312,
+      "type": "Suite"
+    },
+    "client": {
+      "id": 46,
+      "name": "Marcelo Almeida",
+      "cpf": "363.363.363-36",
+      "phone": "(36) 98765-4321",
+      "email": "marcelo@email.com",
+      "address": "Rua D"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741870,
+    "plannedCheckin": "2025-09-09",
+    "checkin": "2025-09-09T14:30:00.000Z",
+    "plannedCheckout": "2025-09-12",
+    "checkout": "2025-09-12T11:00:00.000Z",
+    "status": "COMPLETED",
+    "apartment": {
+      "id": 1073741870,
+      "number": 411,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 47,
+      "name": "Roberta Costa",
+      "cpf": "373.373.373-37",
+      "phone": "(37) 98765-4321",
+      "email": "roberta@email.com",
+      "address": "Avenida E"
+    },
+    "guests": 1
+  },
+  {
+    "id": 1073741871,
+    "plannedCheckin": "2025-09-11",
+    "checkin": "2025-09-11T13:00:00.000Z",
+    "plannedCheckout": "2025-09-13",
+    "checkout": null,
+    "status": "CHECKED_IN",
+    "apartment": {
+      "id": 1073741871,
+      "number": 112,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 48,
+      "name": "Henrique Lopes",
+      "cpf": "383.383.383-38",
+      "phone": "(38) 98765-4321",
+      "email": "henrique.lopes@email.com",
+      "address": "Rua F"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741872,
+    "plannedCheckin": "2025-09-13",
+    "checkin": null,
+    "plannedCheckout": "2025-09-16",
+    "checkout": null,
+    "status": "PENDING",
+    "apartment": {
+      "id": 1073741872,
+      "number": 213,
+      "type": "Deluxe"
+    },
+    "client": {
+      "id": 49,
+      "name": "Patrícia Souza",
+      "cpf": "393.393.393-39",
+      "phone": "(39) 98765-4321",
+      "email": "patricia.souza@email.com",
+      "address": "Avenida G"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741873,
+    "plannedCheckin": "2025-09-15",
+    "checkin": "2025-09-15T15:00:00.000Z",
+    "plannedCheckout": "2025-09-18",
+    "checkout": "2025-09-18T11:00:00.000Z",
+    "status": "COMPLETED",
+    "apartment": {
+      "id": 1073741873,
+      "number": 313,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 50,
+      "name": "Fábio Martins",
+      "cpf": "404.404.404-40",
+      "phone": "(40) 98765-4321",
+      "email": "fabio@email.com",
+      "address": "Rua H"
+    },
+    "guests": 1
+  },
+  {
+    "id": 1073741874,
+    "plannedCheckin": "2025-09-17",
+    "checkin": "2025-09-17T16:00:00.000Z",
+    "plannedCheckout": "2025-09-20",
+    "checkout": null,
+    "status": "CHECKED_IN",
+    "apartment": {
+      "id": 1073741874,
+      "number": 412,
+      "type": "Suite"
+    },
+    "client": {
+      "id": 51,
+      "name": "Simone Mendes",
+      "cpf": "414.414.414-14",
+      "phone": "(41) 98765-4321",
+      "email": "simone@email.com",
+      "address": "Avenida I"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741875,
+    "plannedCheckin": "2025-09-19",
+    "checkin": null,
+    "plannedCheckout": "2025-09-21",
+    "checkout": null,
+    "status": "CANCELED",
+    "apartment": {
+      "id": 1073741875,
+      "number": 113,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 52,
+      "name": "Eduarda Gomes",
+      "cpf": "424.424.424-24",
+      "phone": "(42) 98765-4321",
+      "email": "eduarda@email.com",
+      "address": "Rua J"
+    },
+    "guests": 1
+  },
+  {
+    "id": 1073741876,
+    "plannedCheckin": "2025-09-20",
+    "checkin": "2025-09-20T14:00:00.000Z",
+    "plannedCheckout": "2025-09-23",
+    "checkout": null,
+    "status": "CHECKED_IN",
+    "apartment": {
+      "id": 1073741876,
+      "number": 214,
+      "type": "Deluxe"
+    },
+    "client": {
+      "id": 53,
+      "name": "Rafaela Alves",
+      "cpf": "434.434.434-34",
+      "phone": "(43) 98765-4321",
+      "email": "rafaela@email.com",
+      "address": "Avenida K"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741877,
+    "plannedCheckin": "2025-09-01",
+    "checkin": "2025-09-01T15:30:00.000Z",
+    "plannedCheckout": "2025-09-04",
+    "checkout": "2025-09-04T11:00:00.000Z",
+    "status": "COMPLETED",
+    "apartment": {
+      "id": 1073741877,
+      "number": 314,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 54,
+      "name": "Paulo Santos",
+      "cpf": "444.444.444-44",
+      "phone": "(44) 98765-4321",
+      "email": "paulo@email.com",
+      "address": "Rua L"
+    },
+    "guests": 1
+  },
+  {
+    "id": 1073741878,
+    "plannedCheckin": "2025-09-03",
+    "checkin": null,
+    "plannedCheckout": "2025-09-05",
+    "checkout": null,
+    "status": "PENDING",
+    "apartment": {
+      "id": 1073741878,
+      "number": 413,
+      "type": "Suite"
+    },
+    "client": {
+      "id": 55,
+      "name": "Claudia Viana",
+      "cpf": "454.454.454-54",
+      "phone": "(45) 98765-4321",
+      "email": "claudia@email.com",
+      "address": "Avenida M"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741879,
+    "plannedCheckin": "2025-09-05",
+    "checkin": "2025-09-05T14:00:00.000Z",
+    "plannedCheckout": "2025-09-08",
+    "checkout": null,
+    "status": "CHECKED_IN",
+    "apartment": {
+      "id": 1073741879,
+      "number": 114,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 56,
+      "name": "Mauricio Costa",
+      "cpf": "464.464.464-64",
+      "phone": "(46) 98765-4321",
+      "email": "mauricio@email.com",
+      "address": "Rua N"
+    },
+    "guests": 1
+  },
+  {
+    "id": 1073741880,
+    "plannedCheckin": "2025-09-07",
+    "checkin": "2025-09-07T15:00:00.000Z",
+    "plannedCheckout": "2025-09-10",
+    "checkout": "2025-09-10T12:00:00.000Z",
+    "status": "COMPLETED",
+    "apartment": {
+      "id": 1073741880,
+      "number": 215,
+      "type": "Deluxe"
+    },
+    "client": {
+      "id": 57,
+      "name": "Elisa Pires",
+      "cpf": "474.474.474-74",
+      "phone": "(47) 98765-4321",
+      "email": "elisa@email.com",
+      "address": "Avenida O"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741881,
+    "plannedCheckin": "2025-09-09",
+    "checkin": null,
+    "plannedCheckout": "2025-09-11",
+    "checkout": null,
+    "status": "PENDING",
+    "apartment": {
+      "id": 1073741881,
+      "number": 315,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 58,
+      "name": "Marcelo Neves",
+      "cpf": "484.484.484-84",
+      "phone": "(48) 98765-4321",
+      "email": "marcelo.neves@email.com",
+      "address": "Rua P"
+    },
+    "guests": 1
+  },
+  {
+    "id": 1073741882,
+    "plannedCheckin": "2025-09-11",
+    "checkin": "2025-09-11T16:00:00.000Z",
+    "plannedCheckout": "2025-09-14",
+    "checkout": null,
+    "status": "CHECKED_IN",
+    "apartment": {
+      "id": 1073741882,
+      "number": 414,
+      "type": "Suite"
+    },
+    "client": {
+      "id": 59,
+      "name": "Larissa Castro",
+      "cpf": "494.494.494-94",
+      "phone": "(49) 98765-4321",
+      "email": "larissa.castro@email.com",
+      "address": "Avenida Q"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741883,
+    "plannedCheckin": "2025-09-13",
+    "checkin": null,
+    "plannedCheckout": "2025-09-17",
+    "checkout": null,
+    "status": "CANCELED",
+    "apartment": {
+      "id": 1073741883,
+      "number": 115,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 60,
+      "name": "Guilherme Santos",
+      "cpf": "505.505.505-05",
+      "phone": "(50) 98765-4321",
+      "email": "guilherme.santos@email.com",
+      "address": "Rua R"
+    },
+    "guests": 1
+  },
+  {
+    "id": 1073741884,
+    "plannedCheckin": "2025-09-15",
+    "checkin": "2025-09-15T13:30:00.000Z",
+    "plannedCheckout": "2025-09-18",
+    "checkout": "2025-09-18T11:00:00.000Z",
+    "status": "COMPLETED",
+    "apartment": {
+      "id": 1073741884,
+      "number": 216,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 61,
+      "name": "Renata Silva",
+      "cpf": "515.515.515-15",
+      "phone": "(51) 98765-4321",
+      "email": "renata@email.com",
+      "address": "Avenida S"
+    },
+    "guests": 1
+  },
+  {
+    "id": 1073741885,
+    "plannedCheckin": "2025-09-17",
+    "checkin": null,
+    "plannedCheckout": "2025-09-20",
+    "checkout": null,
+    "status": "PENDING",
+    "apartment": {
+      "id": 1073741885,
+      "number": 316,
+      "type": "Deluxe"
+    },
+    "client": {
+      "id": 62,
+      "name": "Vinicius Ribeiro",
+      "cpf": "525.525.525-25",
+      "phone": "(52) 98765-4321",
+      "email": "vinicius@email.com",
+      "address": "Rua T"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741886,
+    "plannedCheckin": "2025-09-19",
+    "checkin": "2025-09-19T14:00:00.000Z",
+    "plannedCheckout": "2025-09-22",
+    "checkout": null,
+    "status": "CHECKED_IN",
+    "apartment": {
+      "id": 1073741886,
+      "number": 415,
+      "type": "Suite"
+    },
+    "client": {
+      "id": 63,
+      "name": "Juliana Gomes",
+      "cpf": "535.535.535-35",
+      "phone": "(53) 98765-4321",
+      "email": "juliana.gomes@email.com",
+      "address": "Avenida U"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741887,
+    "plannedCheckin": "2025-09-20",
+    "checkin": null,
+    "plannedCheckout": "2025-09-23",
+    "checkout": null,
+    "status": "CANCELED",
+    "apartment": {
+      "id": 1073741887,
+      "number": 116,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 64,
+      "name": "Thiago Costa",
+      "cpf": "545.545.545-45",
+      "phone": "(54) 98765-4321",
+      "email": "thiago.costa@email.com",
+      "address": "Rua V"
+    },
+    "guests": 1
+  },
+  {
+    "id": 1073741888,
+    "plannedCheckin": "2025-09-01",
+    "checkin": "2025-09-01T15:00:00.000Z",
+    "plannedCheckout": "2025-09-03",
+    "checkout": "2025-09-03T11:00:00.000Z",
+    "status": "COMPLETED",
+    "apartment": {
+      "id": 1073741888,
+      "number": 217,
+      "type": "Deluxe"
+    },
+    "client": {
+      "id": 65,
+      "name": "Carla Oliveira",
+      "cpf": "555.555.555-55",
+      "phone": "(55) 98765-4321",
+      "email": "carla@email.com",
+      "address": "Avenida W"
+    },
+    "guests": 2
+  },
+  {
+    "id": 1073741889,
+    "plannedCheckin": "2025-09-04",
+    "checkin": "2025-09-04T14:30:00.000Z",
+    "plannedCheckout": "2025-09-06",
+    "checkout": null,
+    "status": "CHECKED_IN",
+    "apartment": {
+      "id": 1073741889,
+      "number": 317,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 66,
+      "name": "Fábio Souza",
+      "cpf": "565.565.565-65",
+      "phone": "(56) 98765-4321",
+      "email": "fabio.souza@email.com",
+      "address": "Rua X"
+    },
+    "guests": 1
+  },
+  {
+    "id": 1073741890,
+    "plannedCheckin": "2025-09-06",
+    "checkin": null,
+    "plannedCheckout": "2025-09-09",
+    "checkout": null,
+    "status": "PENDING",
+    "guests": 2,
+    "apartment": {
+      "id": 1073741890,
+      "number": 416,
+      "type": "Suite"
+    },
+    "client": {
+      "id": 67,
+      "name": "Maria Silva",
+      "cpf": "575.575.575-75",
+      "phone": "(57) 98765-4321",
+      "email": "maria.silva@email.com",
+      "address": "Avenida Y"
+    }
+  },
+  {
+    "id": 1073741891,
+    "plannedCheckin": "2025-09-08",
+    "checkin": "2025-09-08T16:00:00.000Z",
+    "plannedCheckout": "2025-09-11",
+    "checkout": "2025-09-11T12:00:00.000Z",
+    "status": "COMPLETED",
+    "guests": 2,
+    "apartment": {
+      "id": 1073741891,
+      "number": 117,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 68,
+      "name": "Carlos Henrique",
+      "cpf": "585.585.585-85",
+      "phone": "(58) 98765-4321",
+      "email": "carlos.henrique@email.com",
+      "address": "Rua Z"
+    }
+  },
+  {
+    "id": 1073741892,
+    "plannedCheckin": "2025-09-10",
+    "checkin": null,
+    "plannedCheckout": "2025-09-13",
+    "checkout": null,
+    "status": "PENDING",
+    "guests": 2,
+    "apartment": {
+      "id": 1073741892,
+      "number": 218,
+      "type": "Deluxe"
+    },
+    "client": {
+      "id": 69,
+      "name": "Cristina Viana",
+      "cpf": "595.595.595-95",
+      "phone": "(59) 98765-4321",
+      "email": "cristina@email.com",
+      "address": "Avenida A"
+    }
+  },
+  {
+    "id": 1073741893,
+    "plannedCheckin": "2025-09-12",
+    "checkin": "2025-09-12T13:00:00.000Z",
+    "plannedCheckout": "2025-09-15",
+    "checkout": null,
+    "status": "CHECKED_IN",
+    "guests": 2,
+    "apartment": {
+      "id": 1073741893,
+      "number": 318,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 70,
+      "name": "Rafaela Rocha",
+      "cpf": "606.606.606-06",
+      "phone": "(60) 98765-4321",
+      "email": "rafaela.rocha@email.com",
+      "address": "Rua B"
+    }
+  },
+  {
+    "id": 1073741894,
+    "plannedCheckin": "2025-09-14",
+    "checkin": null,
+    "plannedCheckout": "2025-09-17",
+    "checkout": null,
+    "status": "PENDING",
+    "guests": 2,
+    "apartment": {
+      "id": 1073741894,
+      "number": 417,
+      "type": "Suite"
+    },
+    "client": {
+      "id": 71,
+      "name": "Ricardo Santos",
+      "cpf": "616.616.616-16",
+      "phone": "(61) 98765-4321",
+      "email": "ricardo.santos@email.com",
+      "address": "Avenida C"
+    }
+  },
+  {
+    "id": 1073741895,
+    "plannedCheckin": "2025-09-16",
+    "checkin": "2025-09-16T15:30:00.000Z",
+    "plannedCheckout": "2025-09-19",
+    "checkout": "2025-09-19T11:00:00.000Z",
+    "status": "COMPLETED",
+    "guests": 2,
+    "apartment": {
+      "id": 1073741895,
+      "number": 118,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 72,
+      "name": "Luciana Alves",
+      "cpf": "626.626.626-26",
+      "phone": "(62) 98765-4321",
+      "email": "luciana.alves@email.com",
+      "address": "Rua D"
+    }
+  },
+  {
+    "id": 1073741896,
+    "plannedCheckin": "2025-09-18",
+    "checkin": "2025-09-18T14:00:00.000Z",
+    "plannedCheckout": "2025-09-21",
+    "checkout": null,
+    "status": "CHECKED_IN",
+    "guests": 2,
+    "apartment": {
+      "id": 1073741896,
+      "number": 219,
+      "type": "Deluxe"
+    },
+    "client": {
+      "id": 73,
+      "name": "Fernando Lima",
+      "cpf": "636.636.636-36",
+      "phone": "(63) 98765-4321",
+      "email": "fernando.lima@email.com",
+      "address": "Avenida E"
+    }
+  },
+  {
+    "id": 1073741897,
+    "plannedCheckin": "2025-09-20",
+    "checkin": null,
+    "plannedCheckout": "2025-09-24",
+    "checkout": null,
+    "status": "PENDING",
+    "guests": 2,
+    "apartment": {
+      "id": 1073741897,
+      "number": 319,
+      "type": "Standard"
+    },
+    "client": {
+      "id": 74,
+      "name": "Mariana Souza",
+      "cpf": "646.646.646-46",
+      "phone": "(64) 98765-4321",
+      "email": "mariana.souza@email.com",
+      "address": "Rua F"
+    }
+  }
+];
+}
