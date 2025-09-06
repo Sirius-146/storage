@@ -1,4 +1,4 @@
-export interface Reservation {
+export default interface Reservation {
   id: number;
   plannedCheckin: string;
   checkin: string | null;

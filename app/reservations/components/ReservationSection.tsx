@@ -1,6 +1,6 @@
 import React from "react";
 import { FlatList, StyleSheet, Text, View } from "react-native";
-import { Reservation } from "../types/reservation";
+import Reservation from "../types/reservation";
 
 interface Props {
   title: string;

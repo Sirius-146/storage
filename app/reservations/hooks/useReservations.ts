@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
-import { fetchReservationsByDate } from "../services/reservationService";
-import { Reservation } from "../types/reservation";
+import fetchReservationsByDate from "../services/reservationService";
+import Reservation from "../types/reservation";
 
-export function useReservations(date: Date) {
+export default function useReservations(date: Date) {
   const [reservations, setReservations] = useState<Reservation[]>([]);
   const [loading, setLoading] = useState(true);
 
