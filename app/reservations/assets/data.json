@@ -1,9 +1,9 @@
 [
   {
     "id": 1073741825,
-    "plannedCheckin": "2025-09-01",
+    "plannedCheckin": "2025-09-01T12:00:00.000Z",
     "checkin": "2025-09-01T14:30:00.000Z",
-    "plannedCheckout": "2025-09-03",
+    "plannedCheckout": "2025-09-03T10:00:00.000Z",
     "checkout": "2025-09-03T11:00:00.000Z",
     "status": "COMPLETED",
     "apartment": {
@@ -23,9 +23,9 @@
   },
   {
     "id": 1073741826,
-    "plannedCheckin": "2025-09-02",
+    "plannedCheckin": "2025-09-02T14:00:00.000Z",
     "checkin": "2025-09-02T15:00:00.000Z",
-    "plannedCheckout": "2025-09-05",
+    "plannedCheckout": "2025-09-05T14:00:00.000Z",
     "checkout": null,
     "status": "CHECKED_IN",
     "apartment": {
@@ -45,9 +45,9 @@
   },
   {
     "id": 1073741827,
-    "plannedCheckin": "2025-09-03",
+    "plannedCheckin": "2025-09-03T12:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-06",
+    "plannedCheckout": "2025-09-06T10:00:00.000Z",
     "checkout": null,
     "status": "PENDING",
     "apartment": {
@@ -67,9 +67,9 @@
   },
   {
     "id": 1073741828,
-    "plannedCheckin": "2025-09-04",
+    "plannedCheckin": "2025-09-04T14:00:00.000Z",
     "checkin": "2025-09-04T16:00:00.000Z",
-    "plannedCheckout": "2025-09-07",
+    "plannedCheckout": "2025-09-07T14:00:00.000Z",
     "checkout": "2025-09-07T11:30:00.000Z",
     "status": "COMPLETED",
     "apartment": {
@@ -89,9 +89,9 @@
   },
   {
     "id": 1073741829,
-    "plannedCheckin": "2025-09-05",
+    "plannedCheckin": "2025-09-05T12:00:00.000Z",
     "checkin": "2025-09-05T13:00:00.000Z",
-    "plannedCheckout": "2025-09-09",
+    "plannedCheckout": "2025-09-09T10:00:00.000Z",
     "checkout": null,
     "status": "CHECKED_IN",
     "apartment": {
@@ -111,9 +111,9 @@
   },
   {
     "id": 1073741830,
-    "plannedCheckin": "2025-09-06",
+    "plannedCheckin": "2025-09-06T14:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-08",
+    "plannedCheckout": "2025-09-08T14:00:00.000Z",
     "checkout": null,
     "status": "PENDING",
     "apartment": {
@@ -133,9 +133,9 @@
   },
   {
     "id": 1073741831,
-    "plannedCheckin": "2025-09-07",
+    "plannedCheckin": "2025-09-07T12:00:00.000Z",
     "checkin": "2025-09-07T12:00:00.000Z",
-    "plannedCheckout": "2025-09-10",
+    "plannedCheckout": "2025-09-10T10:00:00.000Z",
     "checkout": "2025-09-10T11:00:00.000Z",
     "status": "COMPLETED",
     "apartment": {
@@ -155,9 +155,9 @@
   },
   {
     "id": 1073741832,
-    "plannedCheckin": "2025-09-08",
+    "plannedCheckin": "2025-09-08T14:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-12",
+    "plannedCheckout": "2025-09-12T14:00:00.000Z",
     "checkout": null,
     "status": "CANCELED",
     "apartment": {
@@ -177,9 +177,9 @@
   },
   {
     "id": 1073741833,
-    "plannedCheckin": "2025-09-09",
+    "plannedCheckin": "2025-09-09T12:00:00.000Z",
     "checkin": "2025-09-09T14:00:00.000Z",
-    "plannedCheckout": "2025-09-11",
+    "plannedCheckout": "2025-09-11T10:00:00.000Z",
     "checkout": null,
     "status": "CHECKED_IN",
     "apartment": {
@@ -199,9 +199,9 @@
   },
   {
     "id": 1073741834,
-    "plannedCheckin": "2025-09-10",
+    "plannedCheckin": "2025-09-10T14:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-14",
+    "plannedCheckout": "2025-09-14T14:00:00.000Z",
     "checkout": null,
     "status": "PENDING",
     "apartment": {
@@ -221,9 +221,9 @@
   },
   {
     "id": 1073741835,
-    "plannedCheckin": "2025-09-11",
+    "plannedCheckin": "2025-09-11T12:00:00.000Z",
     "checkin": "2025-09-11T15:30:00.000Z",
-    "plannedCheckout": "2025-09-15",
+    "plannedCheckout": "2025-09-15T10:00:00.000Z",
     "checkout": "2025-09-15T10:00:00.000Z",
     "status": "COMPLETED",
     "apartment": {
@@ -243,9 +243,9 @@
   },
   {
     "id": 1073741836,
-    "plannedCheckin": "2025-09-12",
+    "plannedCheckin": "2025-09-12T14:00:00.000Z",
     "checkin": "2025-09-12T13:00:00.000Z",
-    "plannedCheckout": "2025-09-13",
+    "plannedCheckout": "2025-09-13T14:00:00.000Z",
     "checkout": null,
     "status": "CHECKED_IN",
     "apartment": {
@@ -265,9 +265,9 @@
   },
   {
     "id": 1073741837,
-    "plannedCheckin": "2025-09-13",
+    "plannedCheckin": "2025-09-13T12:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-16",
+    "plannedCheckout": "2025-09-16T10:00:00.000Z",
     "checkout": null,
     "status": "PENDING",
     "apartment": {
@@ -287,9 +287,9 @@
   },
   {
     "id": 1073741838,
-    "plannedCheckin": "2025-09-14",
+    "plannedCheckin": "2025-09-14T14:00:00.000Z",
     "checkin": "2025-09-14T14:30:00.000Z",
-    "plannedCheckout": "2025-09-17",
+    "plannedCheckout": "2025-09-17T14:00:00.000Z",
     "checkout": "2025-09-17T11:00:00.000Z",
     "status": "COMPLETED",
     "apartment": {
@@ -309,9 +309,9 @@
   },
   {
     "id": 1073741839,
-    "plannedCheckin": "2025-09-15",
+    "plannedCheckin": "2025-09-15T12:00:00.000Z",
     "checkin": "2025-09-15T15:00:00.000Z",
-    "plannedCheckout": "2025-09-18",
+    "plannedCheckout": "2025-09-18T10:00:00.000Z",
     "checkout": null,
     "status": "CHECKED_IN",
     "apartment": {
@@ -331,9 +331,9 @@
   },
   {
     "id": 1073741840,
-    "plannedCheckin": "2025-09-16",
+    "plannedCheckin": "2025-09-16T14:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-19",
+    "plannedCheckout": "2025-09-19T14:00:00.000Z",
     "checkout": null,
     "status": "PENDING",
     "apartment": {
@@ -353,9 +353,9 @@
   },
   {
     "id": 1073741841,
-    "plannedCheckin": "2025-09-17",
+    "plannedCheckin": "2025-09-17T12:00:00.000Z",
     "checkin": "2025-09-17T16:00:00.000Z",
-    "plannedCheckout": "2025-09-20",
+    "plannedCheckout": "2025-09-20T10:00:00.000Z",
     "checkout": "2025-09-20T12:00:00.000Z",
     "status": "COMPLETED",
     "apartment": {
@@ -375,9 +375,9 @@
   },
   {
     "id": 1073741842,
-    "plannedCheckin": "2025-09-18",
+    "plannedCheckin": "2025-09-18T14:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-21",
+    "plannedCheckout": "2025-09-21T14:00:00.000Z",
     "checkout": null,
     "status": "CANCELED",
     "apartment": {
@@ -397,9 +397,9 @@
   },
   {
     "id": 1073741843,
-    "plannedCheckin": "2025-09-19",
+    "plannedCheckin": "2025-09-19T12:00:00.000Z",
     "checkin": "2025-09-19T13:00:00.000Z",
-    "plannedCheckout": "2025-09-22",
+    "plannedCheckout": "2025-09-22T10:00:00.000Z",
     "checkout": null,
     "status": "CHECKED_IN",
     "apartment": {
@@ -419,9 +419,9 @@
   },
   {
     "id": 1073741844,
-    "plannedCheckin": "2025-09-20",
+    "plannedCheckin": "2025-09-20T14:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-23",
+    "plannedCheckout": "2025-09-23T14:00:00.000Z",
     "checkout": null,
     "status": "PENDING",
     "apartment": {
@@ -441,9 +441,9 @@
   },
   {
     "id": 1073741845,
-    "plannedCheckin": "2025-09-01",
+    "plannedCheckin": "2025-09-01T12:00:00.000Z",
     "checkin": "2025-09-01T15:00:00.000Z",
-    "plannedCheckout": "2025-09-02",
+    "plannedCheckout": "2025-09-02T10:00:00.000Z",
     "checkout": "2025-09-02T11:00:00.000Z",
     "status": "COMPLETED",
     "apartment": {
@@ -463,9 +463,9 @@
   },
   {
     "id": 1073741846,
-    "plannedCheckin": "2025-09-03",
+    "plannedCheckin": "2025-09-03T12:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-05",
+    "plannedCheckout": "2025-09-05T10:00:00.000Z",
     "checkout": null,
     "status": "PENDING",
     "apartment": {
@@ -485,9 +485,9 @@
   },
   {
     "id": 1073741847,
-    "plannedCheckin": "2025-09-04",
+    "plannedCheckin": "2025-09-04T14:00:00.000Z",
     "checkin": "2025-09-04T14:00:00.000Z",
-    "plannedCheckout": "2025-09-08",
+    "plannedCheckout": "2025-09-08T14:00:00.000Z",
     "checkout": null,
     "status": "CHECKED_IN",
     "apartment": {
@@ -507,9 +507,9 @@
   },
   {
     "id": 1073741848,
-    "plannedCheckin": "2025-09-06",
+    "plannedCheckin": "2025-09-06T14:00:00.000Z",
     "checkin": "2025-09-06T15:30:00.000Z",
-    "plannedCheckout": "2025-09-09",
+    "plannedCheckout": "2025-09-09T14:00:00.000Z",
     "checkout": "2025-09-09T11:30:00.000Z",
     "status": "COMPLETED",
     "apartment": {
@@ -529,9 +529,9 @@
   },
   {
     "id": 1073741849,
-    "plannedCheckin": "2025-09-08",
+    "plannedCheckin": "2025-09-08T14:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-10",
+    "plannedCheckout": "2025-09-10T14:00:00.000Z",
     "checkout": null,
     "status": "CANCELED",
     "apartment": {
@@ -551,9 +551,9 @@
   },
   {
     "id": 1073741850,
-    "plannedCheckin": "2025-09-10",
+    "plannedCheckin": "2025-09-10T14:00:00.000Z",
     "checkin": "2025-09-10T14:00:00.000Z",
-    "plannedCheckout": "2025-09-12",
+    "plannedCheckout": "2025-09-12T14:00:00.000Z",
     "checkout": null,
     "status": "CHECKED_IN",
     "apartment": {
@@ -573,9 +573,9 @@
   },
   {
     "id": 1073741851,
-    "plannedCheckin": "2025-09-11",
+    "plannedCheckin": "2025-09-11T12:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-15",
+    "plannedCheckout": "2025-09-15T10:00:00.000Z",
     "checkout": null,
     "status": "PENDING",
     "apartment": {
@@ -595,9 +595,9 @@
   },
   {
     "id": 1073741852,
-    "plannedCheckin": "2025-09-13",
+    "plannedCheckin": "2025-09-13T12:00:00.000Z",
     "checkin": "2025-09-13T16:00:00.000Z",
-    "plannedCheckout": "2025-09-16",
+    "plannedCheckout": "2025-09-16T10:00:00.000Z",
     "checkout": "2025-09-16T12:00:00.000Z",
     "status": "COMPLETED",
     "apartment": {
@@ -617,9 +617,9 @@
   },
   {
     "id": 1073741853,
-    "plannedCheckin": "2025-09-15",
+    "plannedCheckin": "2025-09-15T12:00:00.000Z",
     "checkin": "2025-09-15T13:00:00.000Z",
-    "plannedCheckout": "2025-09-19",
+    "plannedCheckout": "2025-09-19T10:00:00.000Z",
     "checkout": null,
     "status": "CHECKED_IN",
     "apartment": {
@@ -639,9 +639,9 @@
   },
   {
     "id": 1073741854,
-    "plannedCheckin": "2025-09-17",
+    "plannedCheckin": "2025-09-17T12:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-20",
+    "plannedCheckout": "2025-09-20T10:00:00.000Z",
     "checkout": null,
     "status": "PENDING",
     "apartment": {
@@ -661,9 +661,9 @@
   },
   {
     "id": 1073741855,
-    "plannedCheckin": "2025-09-19",
+    "plannedCheckin": "2025-09-19T12:00:00.000Z",
     "checkin": "2025-09-19T15:00:00.000Z",
-    "plannedCheckout": "2025-09-22",
+    "plannedCheckout": "2025-09-22T10:00:00.000Z",
     "checkout": "2025-09-22T11:00:00.000Z",
     "status": "COMPLETED",
     "apartment": {
@@ -683,11 +683,12 @@
   },
   {
     "id": 1073741856,
-    "plannedCheckin": "2025-09-20",
+    "plannedCheckin": "2025-09-20T14:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-24",
+    "plannedCheckout": "2025-09-24T14:00:00.000Z",
     "checkout": null,
     "status": "PENDING",
+    "guests": 2,
     "apartment": {
       "id": 1073741856,
       "number": 209,
@@ -700,16 +701,16 @@
       "phone": "(23) 98765-4321",
       "email": "rodrigo@email.com",
       "address": "Avenida Q"
-    },
-    "guests": 2
+    }
   },
   {
     "id": 1073741857,
-    "plannedCheckin": "2025-09-02",
+    "plannedCheckin": "2025-09-02T14:00:00.000Z",
     "checkin": "2025-09-02T13:30:00.000Z",
-    "plannedCheckout": "2025-09-05",
+    "plannedCheckout": "2025-09-05T14:00:00.000Z",
     "checkout": "2025-09-05T12:00:00.000Z",
     "status": "COMPLETED",
+    "guests": 1,
     "apartment": {
       "id": 1073741857,
       "number": 309,
@@ -722,16 +723,16 @@
       "phone": "(24) 98765-4321",
       "email": "alice@email.com",
       "address": "Rua R"
-    },
-    "guests": 1
+    }
   },
   {
     "id": 1073741858,
-    "plannedCheckin": "2025-09-05",
+    "plannedCheckin": "2025-09-05T12:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-07",
+    "plannedCheckout": "2025-09-07T10:00:00.000Z",
     "checkout": null,
     "status": "CANCELED",
+    "guests": 2,
     "apartment": {
       "id": 1073741858,
       "number": 408,
@@ -744,16 +745,16 @@
       "phone": "(25) 98765-4321",
       "email": "marcos@email.com",
       "address": "Avenida S"
-    },
-    "guests": 2
+    }
   },
   {
     "id": 1073741859,
-    "plannedCheckin": "2025-09-07",
+    "plannedCheckin": "2025-09-07T12:00:00.000Z",
     "checkin": "2025-09-07T14:30:00.000Z",
-    "plannedCheckout": "2025-09-11",
+    "plannedCheckout": "2025-09-11T10:00:00.000Z",
     "checkout": null,
     "status": "CHECKED_IN",
+    "guests": 2,
     "apartment": {
       "id": 1073741859,
       "number": 109,
@@ -766,16 +767,16 @@
       "phone": "(26) 98765-4321",
       "email": "vitor@email.com",
       "address": "Rua T"
-    },
-    "guests": 2
+    }
   },
   {
     "id": 1073741860,
-    "plannedCheckin": "2025-09-09",
+    "plannedCheckin": "2025-09-09T12:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-12",
+    "plannedCheckout": "2025-09-12T10:00:00.000Z",
     "checkout": null,
     "status": "PENDING",
+    "guests": 1,
     "apartment": {
       "id": 1073741860,
       "number": 210,
@@ -788,16 +789,16 @@
       "phone": "(27) 98765-4321",
       "email": "laura@email.com",
       "address": "Avenida U"
-    },
-    "guests": 1
+    }
   },
   {
     "id": 1073741861,
-    "plannedCheckin": "2025-09-12",
+    "plannedCheckin": "2025-09-12T14:00:00.000Z",
     "checkin": "2025-09-12T15:00:00.000Z",
-    "plannedCheckout": "2025-09-14",
+    "plannedCheckout": "2025-09-14T14:00:00.000Z",
     "checkout": "2025-09-14T11:00:00.000Z",
     "status": "COMPLETED",
+    "guests": 2,
     "apartment": {
       "id": 1073741861,
       "number": 310,
@@ -810,16 +811,16 @@
       "phone": "(28) 98765-4321",
       "email": "thiagocosta@email.com",
       "address": "Rua V"
-    },
-    "guests": 2
+    }
   },
   {
     "id": 1073741862,
-    "plannedCheckin": "2025-09-14",
+    "plannedCheckin": "2025-09-14T14:00:00.000Z",
     "checkin": "2025-09-14T16:00:00.000Z",
-    "plannedCheckout": "2025-09-17",
+    "plannedCheckout": "2025-09-17T14:00:00.000Z",
     "checkout": null,
     "status": "CHECKED_IN",
+    "guests": 1,
     "apartment": {
       "id": 1073741862,
       "number": 409,
@@ -832,16 +833,16 @@
       "phone": "(29) 98765-4321",
       "email": "juliana@email.com",
       "address": "Avenida W"
-    },
-    "guests": 1
+    }
   },
   {
     "id": 1073741863,
-    "plannedCheckin": "2025-09-16",
+    "plannedCheckin": "2025-09-16T14:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-18",
+    "plannedCheckout": "2025-09-18T14:00:00.000Z",
     "checkout": null,
     "status": "PENDING",
+    "guests": 2,
     "apartment": {
       "id": 1073741863,
       "number": 110,
@@ -854,16 +855,16 @@
       "phone": "(30) 98765-4321",
       "email": "bruno.lima@email.com",
       "address": "Rua X"
-    },
-    "guests": 2
+    }
   },
   {
     "id": 1073741864,
-    "plannedCheckin": "2025-09-18",
+    "plannedCheckin": "2025-09-18T14:00:00.000Z",
     "checkin": "2025-09-18T13:00:00.000Z",
-    "plannedCheckout": "2025-09-20",
+    "plannedCheckout": "2025-09-20T14:00:00.000Z",
     "checkout": "2025-09-20T11:30:00.000Z",
     "status": "COMPLETED",
+    "guests": 1,
     "apartment": {
       "id": 1073741864,
       "number": 211,
@@ -876,16 +877,16 @@
       "phone": "(31) 98765-4321",
       "email": "livia@email.com",
       "address": "Avenida Y"
-    },
-    "guests": 1
+    }
   },
   {
     "id": 1073741865,
-    "plannedCheckin": "2025-09-20",
+    "plannedCheckin": "2025-09-20T14:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-25",
+    "plannedCheckout": "2025-09-25T14:00:00.000Z",
     "checkout": null,
     "status": "PENDING",
+    "guests": 2,
     "apartment": {
       "id": 1073741865,
       "number": 311,
@@ -898,16 +899,16 @@
       "phone": "(32) 98765-4321",
       "email": "henrique@email.com",
       "address": "Rua Z"
-    },
-    "guests": 2
+    }
   },
   {
     "id": 1073741866,
-    "plannedCheckin": "2025-09-01",
+    "plannedCheckin": "2025-09-01T12:00:00.000Z",
     "checkin": "2025-09-01T14:00:00.000Z",
-    "plannedCheckout": "2025-09-04",
+    "plannedCheckout": "2025-09-04T10:00:00.000Z",
     "checkout": "2025-09-04T12:00:00.000Z",
     "status": "COMPLETED",
+    "guests": 2,
     "apartment": {
       "id": 1073741866,
       "number": 410,
@@ -920,16 +921,16 @@
       "phone": "(33) 98765-4321",
       "email": "monica@email.com",
       "address": "Avenida A"
-    },
-    "guests": 2
+    }
   },
   {
     "id": 1073741867,
-    "plannedCheckin": "2025-09-03",
+    "plannedCheckin": "2025-09-03T12:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-06",
+    "plannedCheckout": "2025-09-06T10:00:00.000Z",
     "checkout": null,
     "status": "CANCELED",
+    "guests": 2,
     "apartment": {
       "id": 1073741867,
       "number": 111,
@@ -942,16 +943,16 @@
       "phone": "(34) 98765-4321",
       "email": "gabriel@email.com",
       "address": "Rua B"
-    },
-    "guests": 2
+    }
   },
   {
     "id": 1073741868,
-    "plannedCheckin": "2025-09-05",
+    "plannedCheckin": "2025-09-05T12:00:00.000Z",
     "checkin": "2025-09-05T15:30:00.000Z",
-    "plannedCheckout": "2025-09-08",
+    "plannedCheckout": "2025-09-08T10:00:00.000Z",
     "checkout": null,
     "status": "CHECKED_IN",
+    "guests": 1,
     "apartment": {
       "id": 1073741868,
       "number": 212,
@@ -964,16 +965,16 @@
       "phone": "(35) 98765-4321",
       "email": "fernanda.rodrigues@email.com",
       "address": "Avenida C"
-    },
-    "guests": 1
+    }
   },
   {
     "id": 1073741869,
-    "plannedCheckin": "2025-09-07",
+    "plannedCheckin": "2025-09-07T12:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-10",
+    "plannedCheckout": "2025-09-10T10:00:00.000Z",
     "checkout": null,
     "status": "PENDING",
+    "guests": 2,
     "apartment": {
       "id": 1073741869,
       "number": 312,
@@ -986,16 +987,16 @@
       "phone": "(36) 98765-4321",
       "email": "marcelo@email.com",
       "address": "Rua D"
-    },
-    "guests": 2
+    }
   },
   {
     "id": 1073741870,
-    "plannedCheckin": "2025-09-09",
+    "plannedCheckin": "2025-09-09T12:00:00.000Z",
     "checkin": "2025-09-09T14:30:00.000Z",
-    "plannedCheckout": "2025-09-12",
+    "plannedCheckout": "2025-09-12T10:00:00.000Z",
     "checkout": "2025-09-12T11:00:00.000Z",
     "status": "COMPLETED",
+    "guests": 1,
     "apartment": {
       "id": 1073741870,
       "number": 411,
@@ -1008,16 +1009,16 @@
       "phone": "(37) 98765-4321",
       "email": "roberta@email.com",
       "address": "Avenida E"
-    },
-    "guests": 1
+    }
   },
   {
     "id": 1073741871,
-    "plannedCheckin": "2025-09-11",
+    "plannedCheckin": "2025-09-11T12:00:00.000Z",
     "checkin": "2025-09-11T13:00:00.000Z",
-    "plannedCheckout": "2025-09-13",
+    "plannedCheckout": "2025-09-13T10:00:00.000Z",
     "checkout": null,
     "status": "CHECKED_IN",
+    "guests": 2,
     "apartment": {
       "id": 1073741871,
       "number": 112,
@@ -1030,16 +1031,16 @@
       "phone": "(38) 98765-4321",
       "email": "henrique.lopes@email.com",
       "address": "Rua F"
-    },
-    "guests": 2
+    }
   },
   {
     "id": 1073741872,
-    "plannedCheckin": "2025-09-13",
+    "plannedCheckin": "2025-09-13T12:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-16",
+    "plannedCheckout": "2025-09-16T10:00:00.000Z",
     "checkout": null,
     "status": "PENDING",
+    "guests": 2,
     "apartment": {
       "id": 1073741872,
       "number": 213,
@@ -1052,16 +1053,16 @@
       "phone": "(39) 98765-4321",
       "email": "patricia.souza@email.com",
       "address": "Avenida G"
-    },
-    "guests": 2
+    }
   },
   {
     "id": 1073741873,
-    "plannedCheckin": "2025-09-15",
+    "plannedCheckin": "2025-09-15T12:00:00.000Z",
     "checkin": "2025-09-15T15:00:00.000Z",
-    "plannedCheckout": "2025-09-18",
+    "plannedCheckout": "2025-09-18T10:00:00.000Z",
     "checkout": "2025-09-18T11:00:00.000Z",
     "status": "COMPLETED",
+    "guests": 1,
     "apartment": {
       "id": 1073741873,
       "number": 313,
@@ -1074,16 +1075,16 @@
       "phone": "(40) 98765-4321",
       "email": "fabio@email.com",
       "address": "Rua H"
-    },
-    "guests": 1
+    }
   },
   {
     "id": 1073741874,
-    "plannedCheckin": "2025-09-17",
+    "plannedCheckin": "2025-09-17T12:00:00.000Z",
     "checkin": "2025-09-17T16:00:00.000Z",
-    "plannedCheckout": "2025-09-20",
+    "plannedCheckout": "2025-09-20T10:00:00.000Z",
     "checkout": null,
     "status": "CHECKED_IN",
+    "guests": 2,
     "apartment": {
       "id": 1073741874,
       "number": 412,
@@ -1096,16 +1097,16 @@
       "phone": "(41) 98765-4321",
       "email": "simone@email.com",
       "address": "Avenida I"
-    },
-    "guests": 2
+    }
   },
   {
     "id": 1073741875,
-    "plannedCheckin": "2025-09-19",
+    "plannedCheckin": "2025-09-19T12:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-21",
+    "plannedCheckout": "2025-09-21T10:00:00.000Z",
     "checkout": null,
     "status": "CANCELED",
+    "guests": 1,
     "apartment": {
       "id": 1073741875,
       "number": 113,
@@ -1118,16 +1119,16 @@
       "phone": "(42) 98765-4321",
       "email": "eduarda@email.com",
       "address": "Rua J"
-    },
-    "guests": 1
+    }
   },
   {
     "id": 1073741876,
-    "plannedCheckin": "2025-09-20",
+    "plannedCheckin": "2025-09-20T14:00:00.000Z",
     "checkin": "2025-09-20T14:00:00.000Z",
-    "plannedCheckout": "2025-09-23",
+    "plannedCheckout": "2025-09-23T14:00:00.000Z",
     "checkout": null,
     "status": "CHECKED_IN",
+    "guests": 2,
     "apartment": {
       "id": 1073741876,
       "number": 214,
@@ -1140,16 +1141,16 @@
       "phone": "(43) 98765-4321",
       "email": "rafaela@email.com",
       "address": "Avenida K"
-    },
-    "guests": 2
+    }
   },
   {
     "id": 1073741877,
-    "plannedCheckin": "2025-09-01",
+    "plannedCheckin": "2025-09-01T12:00:00.000Z",
     "checkin": "2025-09-01T15:30:00.000Z",
-    "plannedCheckout": "2025-09-04",
+    "plannedCheckout": "2025-09-04T10:00:00.000Z",
     "checkout": "2025-09-04T11:00:00.000Z",
     "status": "COMPLETED",
+    "guests": 1,
     "apartment": {
       "id": 1073741877,
       "number": 314,
@@ -1162,16 +1163,16 @@
       "phone": "(44) 98765-4321",
       "email": "paulo@email.com",
       "address": "Rua L"
-    },
-    "guests": 1
+    }
   },
   {
     "id": 1073741878,
-    "plannedCheckin": "2025-09-03",
+    "plannedCheckin": "2025-09-03T12:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-05",
+    "plannedCheckout": "2025-09-05T10:00:00.000Z",
     "checkout": null,
     "status": "PENDING",
+    "guests": 2,
     "apartment": {
       "id": 1073741878,
       "number": 413,
@@ -1184,16 +1185,16 @@
       "phone": "(45) 98765-4321",
       "email": "claudia@email.com",
       "address": "Avenida M"
-    },
-    "guests": 2
+    }
   },
   {
     "id": 1073741879,
-    "plannedCheckin": "2025-09-05",
+    "plannedCheckin": "2025-09-05T12:00:00.000Z",
     "checkin": "2025-09-05T14:00:00.000Z",
-    "plannedCheckout": "2025-09-08",
+    "plannedCheckout": "2025-09-08T10:00:00.000Z",
     "checkout": null,
     "status": "CHECKED_IN",
+    "guests": 1,
     "apartment": {
       "id": 1073741879,
       "number": 114,
@@ -1206,16 +1207,16 @@
       "phone": "(46) 98765-4321",
       "email": "mauricio@email.com",
       "address": "Rua N"
-    },
-    "guests": 1
+    }
   },
   {
     "id": 1073741880,
-    "plannedCheckin": "2025-09-07",
+    "plannedCheckin": "2025-09-07T12:00:00.000Z",
     "checkin": "2025-09-07T15:00:00.000Z",
-    "plannedCheckout": "2025-09-10",
+    "plannedCheckout": "2025-09-10T10:00:00.000Z",
     "checkout": "2025-09-10T12:00:00.000Z",
     "status": "COMPLETED",
+    "guests": 2,
     "apartment": {
       "id": 1073741880,
       "number": 215,
@@ -1228,16 +1229,16 @@
       "phone": "(47) 98765-4321",
       "email": "elisa@email.com",
       "address": "Avenida O"
-    },
-    "guests": 2
+    }
   },
   {
     "id": 1073741881,
-    "plannedCheckin": "2025-09-09",
+    "plannedCheckin": "2025-09-09T12:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-11",
+    "plannedCheckout": "2025-09-11T10:00:00.000Z",
     "checkout": null,
     "status": "PENDING",
+    "guests": 1,
     "apartment": {
       "id": 1073741881,
       "number": 315,
@@ -1250,16 +1251,16 @@
       "phone": "(48) 98765-4321",
       "email": "marcelo.neves@email.com",
       "address": "Rua P"
-    },
-    "guests": 1
+    }
   },
   {
     "id": 1073741882,
-    "plannedCheckin": "2025-09-11",
+    "plannedCheckin": "2025-09-11T12:00:00.000Z",
     "checkin": "2025-09-11T16:00:00.000Z",
-    "plannedCheckout": "2025-09-14",
+    "plannedCheckout": "2025-09-14T10:00:00.000Z",
     "checkout": null,
     "status": "CHECKED_IN",
+    "guests": 2,
     "apartment": {
       "id": 1073741882,
       "number": 414,
@@ -1272,16 +1273,16 @@
       "phone": "(49) 98765-4321",
       "email": "larissa.castro@email.com",
       "address": "Avenida Q"
-    },
-    "guests": 2
+    }
   },
   {
     "id": 1073741883,
-    "plannedCheckin": "2025-09-13",
+    "plannedCheckin": "2025-09-13T12:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-17",
+    "plannedCheckout": "2025-09-17T10:00:00.000Z",
     "checkout": null,
     "status": "CANCELED",
+    "guests": 1,
     "apartment": {
       "id": 1073741883,
       "number": 115,
@@ -1294,16 +1295,16 @@
       "phone": "(50) 98765-4321",
       "email": "guilherme.santos@email.com",
       "address": "Rua R"
-    },
-    "guests": 1
+    }
   },
   {
     "id": 1073741884,
-    "plannedCheckin": "2025-09-15",
+    "plannedCheckin": "2025-09-15T12:00:00.000Z",
     "checkin": "2025-09-15T13:30:00.000Z",
-    "plannedCheckout": "2025-09-18",
+    "plannedCheckout": "2025-09-18T10:00:00.000Z",
     "checkout": "2025-09-18T11:00:00.000Z",
     "status": "COMPLETED",
+    "guests": 1,
     "apartment": {
       "id": 1073741884,
       "number": 216,
@@ -1316,16 +1317,16 @@
       "phone": "(51) 98765-4321",
       "email": "renata@email.com",
       "address": "Avenida S"
-    },
-    "guests": 1
+    }
   },
   {
     "id": 1073741885,
-    "plannedCheckin": "2025-09-17",
+    "plannedCheckin": "2025-09-17T12:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-20",
+    "plannedCheckout": "2025-09-20T10:00:00.000Z",
     "checkout": null,
     "status": "PENDING",
+    "guests": 2,
     "apartment": {
       "id": 1073741885,
       "number": 316,
@@ -1338,16 +1339,16 @@
       "phone": "(52) 98765-4321",
       "email": "vinicius@email.com",
       "address": "Rua T"
-    },
-    "guests": 2
+    }
   },
   {
     "id": 1073741886,
-    "plannedCheckin": "2025-09-19",
+    "plannedCheckin": "2025-09-19T12:00:00.000Z",
     "checkin": "2025-09-19T14:00:00.000Z",
-    "plannedCheckout": "2025-09-22",
+    "plannedCheckout": "2025-09-22T10:00:00.000Z",
     "checkout": null,
     "status": "CHECKED_IN",
+    "guests": 2,
     "apartment": {
       "id": 1073741886,
       "number": 415,
@@ -1360,16 +1361,16 @@
       "phone": "(53) 98765-4321",
       "email": "juliana.gomes@email.com",
       "address": "Avenida U"
-    },
-    "guests": 2
+    }
   },
   {
     "id": 1073741887,
-    "plannedCheckin": "2025-09-20",
+    "plannedCheckin": "2025-09-20T14:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-23",
+    "plannedCheckout": "2025-09-23T14:00:00.000Z",
     "checkout": null,
     "status": "CANCELED",
+    "guests": 1,
     "apartment": {
       "id": 1073741887,
       "number": 116,
@@ -1382,20 +1383,20 @@
       "phone": "(54) 98765-4321",
       "email": "thiago.costa@email.com",
       "address": "Rua V"
-    },
-    "guests": 1
+    }
   },
   {
     "id": 1073741888,
-    "plannedCheckin": "2025-09-01",
+    "plannedCheckin": "2025-09-01T12:00:00.000Z",
     "checkin": "2025-09-01T15:00:00.000Z",
-    "plannedCheckout": "2025-09-03",
+    "plannedCheckout": "2025-09-03T10:00:00.000Z",
     "checkout": "2025-09-03T11:00:00.000Z",
     "status": "COMPLETED",
+    "guests": 2,
     "apartment": {
       "id": 1073741888,
       "number": 217,
-      "type": "Deluxe"
+      "type": "Standard"
     },
     "client": {
       "id": 65,
@@ -1404,14 +1405,13 @@
       "phone": "(55) 98765-4321",
       "email": "carla@email.com",
       "address": "Avenida W"
-    },
-    "guests": 2
+    }
   },
   {
     "id": 1073741889,
-    "plannedCheckin": "2025-09-04",
+    "plannedCheckin": "2025-09-04T12:00:00.000Z",
     "checkin": "2025-09-04T14:30:00.000Z",
-    "plannedCheckout": "2025-09-06",
+    "plannedCheckout": "2025-09-06T14:00:00.000Z",
     "checkout": null,
     "status": "CHECKED_IN",
     "apartment": {
@@ -1431,9 +1431,9 @@
   },
   {
     "id": 1073741890,
-    "plannedCheckin": "2025-09-06",
+    "plannedCheckin": "2025-09-06T14:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-09",
+    "plannedCheckout": "2025-09-09T12:00:00.000Z",
     "checkout": null,
     "status": "PENDING",
     "guests": 2,
@@ -1453,9 +1453,9 @@
   },
   {
     "id": 1073741891,
-    "plannedCheckin": "2025-09-08",
+    "plannedCheckin": "2025-09-08T14:00:00.000Z",
     "checkin": "2025-09-08T16:00:00.000Z",
-    "plannedCheckout": "2025-09-11",
+    "plannedCheckout": "2025-09-11T12:00:00.000Z",
     "checkout": "2025-09-11T12:00:00.000Z",
     "status": "COMPLETED",
     "guests": 2,
@@ -1475,9 +1475,9 @@
   },
   {
     "id": 1073741892,
-    "plannedCheckin": "2025-09-10",
+    "plannedCheckin": "2025-09-10T12:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-13",
+    "plannedCheckout": "2025-09-13T14:00:00.000Z",
     "checkout": null,
     "status": "PENDING",
     "guests": 2,
@@ -1497,9 +1497,9 @@
   },
   {
     "id": 1073741893,
-    "plannedCheckin": "2025-09-12",
+    "plannedCheckin": "2025-09-12T12:00:00.000Z",
     "checkin": "2025-09-12T13:00:00.000Z",
-    "plannedCheckout": "2025-09-15",
+    "plannedCheckout": "2025-09-15T14:00:00.000Z",
     "checkout": null,
     "status": "CHECKED_IN",
     "guests": 2,
@@ -1519,9 +1519,9 @@
   },
   {
     "id": 1073741894,
-    "plannedCheckin": "2025-09-14",
+    "plannedCheckin": "2025-09-14T14:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-17",
+    "plannedCheckout": "2025-09-17T14:00:00.000Z",
     "checkout": null,
     "status": "PENDING",
     "guests": 2,
@@ -1541,9 +1541,9 @@
   },
   {
     "id": 1073741895,
-    "plannedCheckin": "2025-09-16",
+    "plannedCheckin": "2025-09-16T14:00:00.000Z",
     "checkin": "2025-09-16T15:30:00.000Z",
-    "plannedCheckout": "2025-09-19",
+    "plannedCheckout": "2025-09-19T14:00:00.000Z",
     "checkout": "2025-09-19T11:00:00.000Z",
     "status": "COMPLETED",
     "guests": 2,
@@ -1563,9 +1563,9 @@
   },
   {
     "id": 1073741896,
-    "plannedCheckin": "2025-09-18",
+    "plannedCheckin": "2025-09-18T14:00:00.000Z",
     "checkin": "2025-09-18T14:00:00.000Z",
-    "plannedCheckout": "2025-09-21",
+    "plannedCheckout": "2025-09-21T14:00:00.000Z",
     "checkout": null,
     "status": "CHECKED_IN",
     "guests": 2,
@@ -1585,9 +1585,9 @@
   },
   {
     "id": 1073741897,
-    "plannedCheckin": "2025-09-20",
+    "plannedCheckin": "2025-09-20T14:00:00.000Z",
     "checkin": null,
-    "plannedCheckout": "2025-09-24",
+    "plannedCheckout": "2025-09-24T14:00:00.000Z",
     "checkout": null,
     "status": "PENDING",
     "guests": 2,

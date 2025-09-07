@@ -1,20 +1,19 @@
-import { useAuth } from "@/context/AuthContext";
-import { Button, Text, View } from "react-native";
+// import { useAuth } from "@/context/AuthContext";
 
 export default function Profile() {
-  const { user, logout } = useAuth();
+  // const { user, logout } = useAuth();
 
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Bem-vindo, {user?.name} ({user?.role})</Text>
+  // return (
+  //   <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+  //     <Text>Bem-vindo, {user?.name} ({user?.role})</Text>
 
-      {user?.role === "ADMIN" ? (
-        <Text>Você tem acesso a funcionalidades de administrador 🚀</Text>
-      ) : (
-        <Text>Acesso normal de usuário</Text>
-      )}
+  //     {user?.role === "ADMIN" ? (
+  //       <Text>Você tem acesso a funcionalidades de administrador 🚀</Text>
+  //     ) : (
+  //       <Text>Acesso normal de usuário</Text>
+  //     )}
 
-      <Button title="Sair" onPress={logout} />
-    </View>
-  );
+  //     <Button title="Sair" onPress={logout} />
+  //   </View>
+  // );
 }

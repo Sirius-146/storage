@@ -1,16 +1,11 @@
 import { useEffect, useMemo, useState } from "react";
 import fetchReservationsByDate from "../services/reservationService";
 import Reservation from "../types/reservation";
+import toLocaldate from "../utils/dateUtils";
 
 export default function useReservations(date: Date) {
   const [reservations, setReservations] = useState<Reservation[]>([]);
   const [loading, setLoading] = useState(true);
-
-  // Helper para formatar a data no formato YYYY-MM-DD
-  const formatDate = (d: Date) => {
-    const pad = (n: number) => (n < 10 ? `0${n}` : n);
-    return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
-  };
 
   useEffect(() => {
     setLoading(true);
@@ -19,7 +14,7 @@ export default function useReservations(date: Date) {
       .finally(() => setLoading(false));
   }, [date]);
 
-  const todayStr = formatDate(date);
+  const todayStr = toLocaldate(date);
 
   const { arriving, leaving, active } = useMemo(() => {
     const arrivingArr: Reservation[] = [];
@@ -27,8 +22,8 @@ export default function useReservations(date: Date) {
     const activeArr: Reservation[] = [];
 
     reservations.forEach((r) => {
-      const checkin = r.checkin ? r.checkin.slice(0, 10) : r.plannedCheckin;
-      const checkout = r.checkout ? r.checkout.slice(0, 10) : r.plannedCheckout;
+      const checkin = (r.checkin ?? r.plannedCheckin )?.slice(0, 10);
+      const checkout = (r.checkout ?? r.plannedCheckout )?.slice(0, 10);
 
       if (checkin === todayStr) {
         arrivingArr.push(r);

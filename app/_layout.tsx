@@ -4,7 +4,7 @@ import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import 'react-native-reanimated';
 
-import { AuthProvider, useAuth } from '@/context/AuthContext';
+import { useAuth } from '@/context/AuthContext';
 import { useColorScheme } from '@/hooks/useColorScheme';
 
 function Layout() {
@@ -26,7 +26,25 @@ function Layout() {
   );
 }
 
+// export default function RootLayout() {
+//   const [loaded] = useFonts({
+//     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
+//   });
+
+//   if (!loaded) {
+//     // Async font loading only occurs in development.
+//     return null;
+//   }
+
+//   return (
+//     <AuthProvider>
+//       <Layout />
+//     </AuthProvider>
+//   );
+// }
+
 export default function RootLayout() {
+  const colorScheme = useColorScheme();
   const [loaded] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
   });
@@ -37,8 +55,12 @@ export default function RootLayout() {
   }
 
   return (
-    <AuthProvider>
-      <Layout />
-    </AuthProvider>
+    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+      <Stack>
+        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        <Stack.Screen name="+not-found" />
+      </Stack>
+      <StatusBar style="auto" />
+    </ThemeProvider>
   );
 }
