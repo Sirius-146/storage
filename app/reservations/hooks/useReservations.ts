@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import fetchReservationsByDate from "../services/reservationService";
+import { fetchReservationsByDate } from "../services/reservationService";
 import Reservation from "../types/reservation";
 import toLocaldate from "../utils/dateUtils";
 

@@ -10,6 +10,13 @@ function getMealFromTime(dateTime: string): string {
   return "Jantar";
 }
 
+function getLeaveMeal(dateTime: string): string {
+  const hour = new Date(dateTime).getHours();
+  if (hour < 12) return "Café da manhã";
+  if (hour > 19) return "Jantar" ;
+  return "Almoço";
+}
+
 /**
  * Agrupa chegadas por refeição, considerando plannedCheckin e checkin real.
  */
@@ -43,40 +50,59 @@ export function groupDepartureByMeal(reservations: Reservation[]) {
   reservations.forEach((r) => {
     const actual = r.checkout ?? r.plannedCheckout; // usar checkout real se existir
     if (!actual) return;
-    const meal = getMealFromTime(actual);
+    const meal = getLeaveMeal(actual);
     groups[meal].push(r);
   });
 
   return groups;
 }
 
-// Horários fixos das refeições
-const mealTimes = {
-  breakfast: "10:00",
-  lunch: "12:00",
-  dinner: "14:00",
+type MealTotals = {
+  apartments: number;
+  guests: number;
 };
 
-export function calculateMealTotals(arriving: Reservation[], leaving: Reservation[], active: Reservation[]) {
-  // Inicial: café da manhã = apenas ativos
-  const totals: Record<string, { apartments: number; guests: number }> = {
-    breakfast: {
-      apartments: active.length,
-      guests: active.reduce((sum, r) => sum + r.guests, 0),
-    },
-    lunch: { apartments: 0, guests: 0 },
-    dinner: { apartments: 0, guests: 0 },
-  };
+export function calculateMealTotals(
+  arriving: Reservation[],
+  leaving: Reservation[],
+  active: Reservation[]
+): { breakfast: MealTotals; lunch: MealTotals; dinner: MealTotals } {
+  // Agrupar chegadas e saídas já usando suas funções
+  const arrivals = groupArrivalByMeal(arriving);
+  const departures = groupDepartureByMeal(leaving);
 
-  // --- Almoço ---
-  const lunchArrivals = arriving.filter(r => r.plannedCheckin.slice(11,16) === mealTimes.lunch);
-  const lunchDepartures = leaving.filter(r => r.plannedCheckout.slice(11,16) <= mealTimes.lunch);
+  // Para evitar duplicação de reservas, usamos Map por ID
+  function sum(reservations: Reservation[]): MealTotals {
+    const apartments = new Set<number>();
+    let guests = 0;
+    reservations.forEach((r) => {
+      apartments.add(r.apartment.id);
+      guests += r.guests ?? 0;
+    });
+    return { apartments: apartments.size, guests };
+  }
 
-  totals.lunch.apartments = totals.breakfast.apartments + lunchArrivals.length - lunchDepartures.length;
-  totals.lunch.guests =
-    totals.breakfast.guests +
-    lunchArrivals.reduce((sum, r) => sum + r.guests, 0) -
-    lunchDepartures.reduce((sum, r) => sum + r.guests, 0);
+  // Café da manhã = ativos + saídas após café
+  const breakfast = sum([
+    ...active,
+    ...departures["Café da manhã"],
+    ...departures["Almoço"],
+    ...departures["Jantar"],
+  ]);
 
-  return totals;
+  // Almoço = ativos + chegadas almoço + saídas após almoço
+  const lunch = sum([
+    ...active,
+    ...arrivals["Almoço"],
+    ...departures["Almoço"],
+  ]);
+
+  // Jantar = ativos + chegadas almoço + chegadas jantar
+  const dinner = sum([
+    ...active,
+    ...arrivals["Almoço"],
+    ...arrivals["Jantar"],
+  ]);
+
+  return { breakfast, lunch, dinner };
 }
