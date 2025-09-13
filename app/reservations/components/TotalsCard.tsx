@@ -22,7 +22,12 @@ export default function TotalsCard({
     return (
         <View>
             {/* Footer com total de apts e hóspedes */}
-            <TouchableOpacity style={styles.footer} onPress={() => setShowTotals(true)}>
+            <TouchableOpacity style={styles.footer} onPress={() => setShowTotals((prev) => !prev)}>
+                <FontAwesome5
+                    name={showTotals ? null : "chevron-up"}
+                    size={16}
+                    color="#333"
+                />
                 <Text style={styles.footerText}>
                     Apartamentos: {totalApartments} | Total hóspedes: {totalGuests}
                 </Text>
@@ -32,7 +37,11 @@ export default function TotalsCard({
             {showTotals && (
                 <View style={styles.modalOverlay}>
                     <Pressable style={styles.pressable} onPress={() => setShowTotals(false)}>
-                        <FontAwesome5 name="sort-down" size={20}/>
+                        <FontAwesome5
+                            name={showTotals ? "chevron-down" : null}
+                            size={16}
+                            color="#333"
+                        />
                         <Text style={styles.cardText}>
                             Café da manhã: {mealTotals.breakfast.apartments} apts | {mealTotals.breakfast.guests} hóspedes
                         </Text>
