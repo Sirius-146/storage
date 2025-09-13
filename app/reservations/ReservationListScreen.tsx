@@ -1,9 +1,10 @@
 import { useMemo, useState } from "react";
-import { Button, SectionList, StyleSheet, Text, View } from "react-native";
+import { Button, ScrollView, StyleSheet, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import ReservationSection from "./components/ReservationSection";
 import TotalsCard from "./components/TotalsCard";
 import useReservations from "./hooks/useReservations";
-import Reservation from "./types/reservation";
+import { buildMealSections, buildSimpleSection } from "./utils/reservationSection";
 import { calculateMealTotals, groupArrivalByMeal, groupDepartureByMeal } from "./utils/reservationUtils";
 
 export default function ReservationListScreen() {
@@ -23,13 +24,13 @@ export default function ReservationListScreen() {
     const totalApartments = arriving.length + active.length;
     const totalGuests = arriving.reduce((sum, r) => sum + r.guests, 0) +
                         active.reduce((sum, r) => sum + r.guests, 0);
-    
-    const sections = [
-        { title: "Para chegar:", data: [], subgroups: arrivalsByMeal },
-        { title: "Para sair:", data: [], subgroups: leavingsByMeal },
-        { title: "Permanece:", data: active, subgroups: null }, // permanece não tem subgrupo
-    ];
-    
+
+    // const sections = [
+    //     { title: "Para chegar:", data: [], subgroups: arrivalsByMeal },
+    //     { title: "Para sair:", data: [], subgroups: leavingsByMeal },
+    //     { title: "Permanece:", data: active, subgroups: null },
+    // ];
+
     return (
         <View style={{flex: 1}}>
             <View style={styles.container}>
@@ -45,57 +46,31 @@ export default function ReservationListScreen() {
                 {loading ? (
                     <Text>Carregando...</Text>
                 ) : (
-                    <SectionList
-                        sections={sections}
-                        keyExtractor={(item: Reservation, index) => `${item.id}-${index}`}
-                        renderItem={({ item, section }) => {
-                            if (!item) return null;
-                            return (
-                                <Text style={styles.item}>
-                                    {item.apartment.number} ({item.guests}) - {item.client.name}
-                                </Text>
-                            );
-                        }}
-                        renderSectionHeader={({ section }) => (
-                            <View style={styles.sectionHeader}>
-                                <Text style={styles.sectionTitle}>{section.title}</Text>
-                                {/* Subgrupos de refeição */}
-                                {section.subgroups &&
-                                    Object.entries(section.subgroups).map(([meal, list]) => {
-                                        if (list.length === 0) return null;
-                                        const totalApts = list.length;
-                                        const totalGuests = list.reduce(
-                                            (sum, r) => sum + r.guests,
-                                            0
-                                        );
-                                        return (
-                                            <View key={meal} style={styles.subGroup}>
-                                                <Text style={styles.subGroupTitle}>
-                                                    {meal} — {totalApts} apts | {totalGuests} hóspedes
-                                                </Text>
-                                                {list.map((r) => (
-                                                    <Text key={r.id} style={styles.item}>
-                                                        {r.apartment.number} ({r.guests}) - {r.client.name}
-                                                    </Text>
-                                                ))}
-                                            </View>
-                                        );
-                                    })
-                                }
-                            </View>
-                        )}
-                        ListEmptyComponent={
-                            <Text style={styles.empty}>Nenhuma reserva para esta data.</Text>
-                        }
-                        contentContainerStyle={{ paddingBottom: insets.bottom }} // espaço p/ rodapé fixo
-                    />
+                    <ScrollView>
+                        <View style={{ paddingBottom: insets.bottom }}>
+                            <ReservationSection
+                                title="Chegadas"
+                                sections={buildMealSections(arrivalsByMeal)}
+                            />
+
+                            <ReservationSection
+                                title="Saídas"
+                                sections={buildMealSections(leavingsByMeal)}
+                            />
+
+                            <ReservationSection
+                                title="Permanece"
+                                sections={buildSimpleSection("Total", active)}
+                            />
+                        </View>
+                    </ScrollView>
                 )}
             </View>
             <TotalsCard
-                    mealTotals={mealTotals}
-                    totalApartments={totalApartments}
-                    totalGuests={totalGuests}
-                />
+                mealTotals={mealTotals}
+                totalApartments={totalApartments}
+                totalGuests={totalGuests}
+            />
         </View>
     );
 }
@@ -111,17 +86,4 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   date: { fontSize: 16, fontWeight: "500" },
-  sectionHeader: {
-    backgroundColor: "#f5f5f5",
-    padding: 8,
-    borderRadius: 8,
-    marginBottom: 8,
-  },
-  sectionTitle: { fontSize: 18, fontWeight: "bold", marginBottom: 6 },
-  subGroup: { marginLeft: 12, marginBottom: 6 },
-  subGroupTitle: { fontSize: 16, fontWeight: "600", marginBottom: 4 },
-  item: { fontSize: 15, paddingVertical: 2, paddingHorizontal: 8 },
-  empty: { marginTop: 20, fontSize: 16, color: "#777", textAlign: "center" },
-  
-  loading: { textAlign: "center", marginTop: 20, fontSize: 16 },
 });

@@ -1,55 +1,80 @@
-import React from "react";
-import { FlatList, StyleSheet, Text, View } from "react-native";
+import { FontAwesome5 } from "@expo/vector-icons";
+import React, { useState } from "react";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import Reservation from "../types/reservation";
+import SectionBlock from "./SectionBlock";
 
-interface Props {
+type Section = {
   title: string;
-  reservations: Reservation[];
-}
+  data: Reservation[];
+};
 
-export default function ReservationSection({ title, reservations }: Props) {
-  const totalApartments = reservations.length;
-  const totalGuests = reservations.reduce((sum, r) => sum + r.guests, 0);
+type ReservationSectionProps = {
+  title: string;
+  sections: Section[];
+};
+
+export default function ReservationSection({ title, sections }: ReservationSectionProps) {
+  const [open, setOpen] = useState(true);
 
   return (
     <View style={styles.section}>
-      <Text style={styles.sectionTitle}>{title}</Text>
-      <Text style={styles.subTitle}>
-        {`Apartamentos: ${totalApartments} | Pessoas: ${totalGuests}`}
-      </Text>
-      <FlatList
-        data={reservations}
-        keyExtractor={(item) => item.id.toString()}
-        renderItem={({ item }) => (
-          <Text style={styles.item}>
-            {item.apartment.number} ({item.guests}) - {item.client.name}
-          </Text>
-        )}
-      />
+      {/* Cabeçalho com toggle */}
+      <TouchableOpacity
+        onPress={() => setOpen((prev) => !prev)}
+        style={styles.sectionHeader}
+        activeOpacity={0.7}
+      >
+        <Text style={styles.sectionTitle}>{title}</Text>
+        <FontAwesome5
+          name={open ? "chevron-up" : "chevron-down"}
+          size={16}
+          color="#333"
+        />
+      </TouchableOpacity>
+
+      {open && (
+        <View style={styles.sectionContent}>
+          {sections.map((section) => (
+            <SectionBlock
+              key={section.title}
+              title={section.title}
+              data={section.data}
+            />
+          ))}
+        </View>
+      )}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   section: {
-    marginBottom: 20,
-    padding: 10,
-    backgroundColor: "#f5f5f5",
-    borderRadius: 8,
+    marginBottom: 16,
+    borderRadius: 10,
+    overflow: "hidden",
+    backgroundColor: "#fff",
+    elevation: 2,
+    shadowColor: "#000",
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    shadowOffset: {width: 0, height: 2},
+  },
+  sectionHeader: {
+    flexDirection:'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingVertical: 12,
+    paddingHorizontal: 16,
+    backgroundColor: "#f0f0f0",
   },
   sectionTitle: {
     fontSize: 18,
-    fontWeight: "bold",
+    fontWeight: "600",
+    color: "#333",
   },
-  subTitle: {
-    fontSize: 14,
-    color: "#555",
-    marginBottom: 8,
-  },
-  item: {
-    fontSize: 16,
-    paddingVertical: 4,
+  sectionContent: {
+    padding: 12,
+    backgroundColor: "#fafafa",
   },
 });
-
-
